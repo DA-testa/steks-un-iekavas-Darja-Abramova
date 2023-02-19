@@ -31,7 +31,7 @@ def main():
     text = input()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
-    if F in text:
+    if "F" in text:
         step = 0
         while step<6:
             with open (f"test/{step}") as fails:
@@ -40,7 +40,7 @@ def main():
                 print(mismatch)
                 step += 1
     
-    if I in text:
+    if "I" in text:
         text = input()
         mismatch = find_mismatch(text)
         print(mismatch)
