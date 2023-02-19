@@ -31,7 +31,20 @@ def main():
     text = input()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
-    print(mismatch)
+    if F in text:
+        step = 0
+        while step<6:
+            with open (f"test/{step}") as fails:
+                text = fails.read()
+                mismatch  = find_mismatch
+                print(mismatch)
+                step += 1
+    
+    if I in text:
+        text = input()
+        mismatch = find_mismatch(text)
+        print(mismatch)
+    
 
 
 if __name__ == "__main__":
